@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useState } from "react";
+import "../../App.css";
 
 function Footer() {
-    return (
-        <section>
+
+    return(
+        <section className="footer-box">
             <nav>
-                <div>
-                    <p>built by<a href=""> jamie de lange</a></p>
+                <div className="footer">
+                    <p /* style={{ color: textColor }} */ >built by<a className="footer-a" href="https://jamiedelange.github.io/portfolio-react/"> jamie de lange</a></p>
                 </div>
             </nav>
         </section>
