@@ -20,7 +20,7 @@ function Gallery(props) {
       <div className="box">
         <header className="header">
           <div className="title-div">
-            <img src={`${logo_black}`}className="title"></img>
+            <img src={`${logo_black}`} className="title"></img>
           </div>
         <>
         <div className="dark-mode-switch">
