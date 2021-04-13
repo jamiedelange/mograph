@@ -61,6 +61,11 @@ img:hover {
   transition: .3s ease;
 }
 
+img:active {
+  -webkit-transform: translateY(1px);
+  transform: translateY(1px);
+}
+
 .img-box {
   padding: 0 6px;
   float: left;
@@ -103,18 +108,23 @@ p {
   border: 1px solid white;
 }
 
-.bid-button:hover {
+a.bid-button {
+  border-radius: 5px;
+}
+
+a.bid-button:hover {
   background: linear-gradient(284deg, rgba(17,51,226,1) 0%, rgba(184,36,187,1) 100%);
 }
 
-a.bid-button {
-  border-radius: 5px;
+a.bid-button:active {
+  transform: translateY(1px);
 }
 
 .footer {
   position: static;
   bottom: 8px;
   left: 8px;
+  font-size: 10px;
 }
 
 .footer-a {

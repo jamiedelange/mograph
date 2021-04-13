@@ -9,10 +9,13 @@ import logo_white from "../../assets/logos/logo_white.png"
 function Gallery(props) {
   const backgroundColor = props.backgroundColor;
   const setBackgroundColor = props.setBackgroundColor;
-  const [textColor, setTextColor] = useState("black");
+  const textColor = props.textColor;
+  const setTextColor = props.setTextColor;
+  const [logoSource, setLogoSource] = useState(logo_black);
   const handleChangeColor = (e) => {
     setTextColor(textColor === "black" ? "white" : "black");
     setBackgroundColor(backgroundColor === "white" ? "black" : "white");
+    setLogoSource(logoSource === logo_black ? logo_white : logo_black);
   };
 
   return (
@@ -20,19 +23,19 @@ function Gallery(props) {
       <div className="box">
         <header className="header">
           <div className="title-div">
-            <img src={`${logo_black}`} className="title"></img>
+            <img src={`${logoSource}`} className="title"></img>
           </div>
         <>
         <div className="dark-mode-switch">
-          <label onClick={handleChangeColor} className="switch">
-            <input type="checkbox" />
+          <label for="switch" onClick={handleChangeColor} className="switch">
+            <input type="checkbox" id="switch"/>
             <span className="slider round" />
           </label>
 
           <small style={{ color: textColor }} className="switch-container_text">
             Dark mode
           </small>
-          </div>
+        </div>
         </>
         </header>
 

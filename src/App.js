@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 
 function App() {
   const [backgroundColor, setBackgroundColor] = useState("white");
+  const [textColor, setTextColor] = useState("black");
 
   useEffect(() => {
     document.title = "Mograph Mafia"
@@ -11,8 +12,8 @@ function App() {
 
   return (
     <body style={{ 'backgroundColor': backgroundColor }}>
-      <Gallery backgroundColor={backgroundColor} setBackgroundColor={setBackgroundColor}/>
-      <Footer></Footer>
+      <Gallery backgroundColor={backgroundColor} setBackgroundColor={setBackgroundColor} textColor={textColor} setTextColor={setTextColor}/>
+      <Footer textColor={textColor} setTextColor={setTextColor}/>
     </body>
   );
 }

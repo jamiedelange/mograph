@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "../../App.css";
 
-function Footer() {
-    const [textColor, setTextColor] = useState("black");
-    
+function Footer(props) {
+    const textColor = props.textColor;
+
     return(
         <section className="footer-box">
             <nav>
