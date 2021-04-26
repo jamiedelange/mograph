@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Gallery from './components/Gallery';
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
 
 function App() {
   const [backgroundColor, setBackgroundColor] = useState("white");
@@ -13,7 +13,7 @@ function App() {
   return (
     <div style={{ 'backgroundColor': backgroundColor }}>
       <Gallery backgroundColor={backgroundColor} setBackgroundColor={setBackgroundColor} textColor={textColor} setTextColor={setTextColor}/>
-      <Footer textColor={textColor} setTextColor={setTextColor}/>
+      {/* <Footer textColor={textColor} setTextColor={setTextColor}/> */}
     </div>
   );
 }

@@ -37,6 +37,10 @@ h1 {
   font-size: 5rem;
 }
 
+.box {
+  margin-bottom: 40px;
+}
+
 .dark-mode-switch {
   position: fixed;
   top: 0px;
@@ -195,12 +199,16 @@ span.footer-span {
     margin: 0rem 10rem;
   } */
 
-  span {
+/*   span {
     position: fixed;
     bottom: 5px;
     left: 5px;
     font-size: 10px;
     margin: 5px;
+  } */
+
+  html {
+    margin-bottom: 2rem;
   }
 
   .img-box {
@@ -214,13 +222,13 @@ span.footer-span {
     margin: 0rem 5rem;
   } */
 
-  span {
+/*   span {
     position: fixed;
     bottom: 5px;
     left: 5px;
     font-size: 10px;
     margin: 5px;
-  }
+  } */
 
   .img-box {
     margin: 1rem 0;

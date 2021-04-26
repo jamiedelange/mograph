@@ -25,11 +25,11 @@ function Gallery(props) {
           <div className="title-div">
             <img src={`${logoSource}`} className="title"></img>
           </div>
-        <>
+        {/* <>
         <div className="dark-mode-switch">
           <input type="checkbox" id="switch" /><label  onClick={handleChangeColor} for="switch"/>
         </div>
-        </>
+        </> */}
         </header>
 
         <div className="img-box">
