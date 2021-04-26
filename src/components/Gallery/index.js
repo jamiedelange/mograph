@@ -19,7 +19,7 @@ function Gallery(props) {
   };
 
   return (
-    <section>
+    <section className="gallery-section">
       <div className="box">
         <header className="header">
           <div className="title-div">
@@ -27,14 +27,7 @@ function Gallery(props) {
           </div>
         <>
         <div className="dark-mode-switch">
-          <label for="switch" onClick={handleChangeColor} className="switch">
-            <input type="checkbox" id="switch"/>
-            <span className="slider round" />
-          </label>
-
-          <small style={{ color: textColor }} className="switch-container_text">
-            Dark mode
-          </small>
+          <input type="checkbox" id="switch" /><label  onClick={handleChangeColor} for="switch"/>
         </div>
         </>
         </header>
