@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "../../App.css";
 import img1 from "../../assets/1.jpg";
-import icon_black from "../../assets/logos/icon_black.png"
-import icon_white from "../../assets/logos/icon_white.png"
+// import icon_black from "../../assets/logos/icon_black.png"
+// import icon_white from "../../assets/logos/icon_white.png"
 import logo_black from "../../assets/logos/logo_black.png"
 import logo_white from "../../assets/logos/logo_white.png"
 
@@ -13,6 +13,7 @@ function Gallery(props) {
   const setTextColor = props.setTextColor;
   const [logoSource, setLogoSource] = useState(logo_black);
   const handleChangeColor = (e) => {
+    e.preventDefault();
     setTextColor(textColor === "black" ? "white" : "black");
     setBackgroundColor(backgroundColor === "white" ? "black" : "white");
     setLogoSource(logoSource === logo_black ? logo_white : logo_black);
