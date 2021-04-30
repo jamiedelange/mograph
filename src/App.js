@@ -11,10 +11,10 @@ function App() {
   }, [])
 
   return (
-    <div style={{ 'backgroundColor': backgroundColor }}>
+    <body style={{ 'backgroundColor': backgroundColor }}>
       <Gallery backgroundColor={backgroundColor} setBackgroundColor={setBackgroundColor} textColor={textColor} setTextColor={setTextColor}/>
-      {/* <Footer textColor={textColor} setTextColor={setTextColor}/> */}
-    </div>
+      <Footer textColor={textColor} setTextColor={setTextColor}/>
+    </body>
   );
 }
 
