@@ -2,6 +2,7 @@ import { data } from 'autoprefixer';
 import React, { useState, useEffect } from 'react';
 import '../../App.css';
 import img1 from '../../assets/1.jpg';
+import img2 from '../../assets/2.jpg';
 // import icon_black from "../../assets/logos/icon_black.png"
 // import icon_white from "../../assets/logos/icon_white.png"
 import logo_black from '../../assets/logos/logo_black.png';
@@ -9,62 +10,62 @@ import logo_white from '../../assets/logos/logo_white.png';
 
 export const dataToMap = [
 	{
-		image: img1,
+		image: img2,
 		imageTitle: 'siegmattel',
-		source: img1, // could be a  path to another subpage or external
+		source: img2, // could be a  path to another subpage or external
 		imageName: 'Shloopy',
 		target: '__blank',
-		href: '../../1.jpg',
+		href: '../../2.jpg',
 		buttonLabel: 'bid',
 		buttonHref: '#'
 	},
 	{
-		image: img1,
+		image: img2,
 		imageTitle: 'siegmattel',
-		source: img1,
+		source: img2,
 		imageName: 'Shloopy',
 		target: '__blank',
-		href: '../../1.jpg',
+		href: '../../2.jpg',
 		buttonLabel: 'bid',
 		buttonHref: '#'
 	},
 	{
-		image: img1,
+		image: img2,
 		imageTitle: 'siegmattel',
-		source: img1,
+		source: img2,
 		imageName: 'Shloopy',
 		target: '__blank',
-		href: '../../1.jpg',
+		href: '../../2.jpg',
 		buttonLabel: 'bid',
 		buttonHref: '#'
 	},
 	{
-		image: img1,
+		image: img2,
 		imageTitle: 'siegmattel',
-		source: img1,
+		source: img2,
 		imageName: 'Shloopy',
 		target: '__blank',
-		href: '../../1.jpg',
+		href: '../../2.jpg',
 		buttonLabel: 'bid',
 		buttonHref: '#'
 	},
 	{
-		image: img1,
+		image: img2,
 		imageTitle: 'siegmattel',
-		source: img1,
+		source: img2,
 		imageName: 'Shloopy',
 		target: '__blank',
-		href: '../../1.jpg',
+		href: '../../2.jpg',
 		buttonLabel: 'bid',
 		buttonHref: '#'
 	},
 	{
-		image: img1,
+		image: img2,
 		imageTitle: 'siegmattel',
-		source: img1,
+		source: img2,
 		imageName: 'Shloopy',
 		target: '__blank',
-		href: '../../1.jpg',
+		href: '../../2.jpg',
 		buttonLabel: 'bid',
 		buttonHref: '#'
 	}
